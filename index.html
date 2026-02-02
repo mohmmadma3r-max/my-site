@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملفاتي - موقعك للملفات والامتحانات</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; text-align: center; }
+        .container { max-width: 500px; margin: auto; background: white; padding: 20px; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; font-size: 22px; }
+        .section-header { background: #2196F3; color: white; padding: 12px; border-radius: 10px; margin: 25px 0 10px; font-size: 18px; font-weight: bold; }
+        .section-header.exams { background: #673AB7; }
+        details { background: #ffffff; border: 1px solid #ddd; border-radius: 10px; margin-bottom: 8px; overflow: hidden; text-align: right; }
+        summary { padding: 15px; font-weight: bold; cursor: pointer; background: #fafafa; outline: none; display: flex; justify-content: space-between; }
+        .content { padding: 10px; background: #fff; display: flex; flex-direction: column; }
+        .item-link { display: flex; justify-content: space-between; align-items: center; padding: 12px; margin: 5px 0; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #333; font-size: 14px; transition: 0.2s; }
+        .item-link:active { background-color: #f0f7ff; }
+        .badge { padding: 4px 10px; border-radius: 20px; font-size: 11px; color: white; font-weight: bold; }
+        .pdf-bg { background: #e91e63; }
+        .exam-bg { background: #673AB7; }
+        .footer { margin-top: 30px; font-size: 12px; color: #888; border-top: 1px solid #eee; padding-top: 15px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌸آفاق التعليم الذكي🌸</h1>
+<img src="https://lh3.googleusercontent.com/u/0/d/1SP4kTlMI-mhls-ijAXg9vNgN2wYkP-I1" 
+     style="width: 100%; max-width: 400px; border-radius: 20px; margin: 15px auto; display: block; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" 
+     alt="Welcome GIF">
+        <div id="quoteBox" style="background: #fff5f8; border: 1px dashed #e91e63; padding: 12px; border-radius: 10px; margin: 15px 0; font-size: 14px; color: #c2185b; font-weight: bold; min-height: 20px; text-align: center; transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out; opacity: 1; transform: translateY(0);">
+    "انطلق بثقة في اتجاه أحلامك!" ✨
+</div>
+
+<script>
+    const quotes = [
+        "انطلق بثقة في اتجاه أحلامك! ✨",
+        "أنت بطل، استمر في الدراسة! 💪",
+        "النجاح ينتظرك يا مبدع! 🎓",
+        "تعب اليوم هو فخر الغد! 🌟", // ضفت فاصلة هنا
+        "لا تستلم، وحاول 👊",
+        "DON'T STOP 🛑",
+        "أنت أقوى مما تظن 💪",
+        "كل يوم هو فرصة جديدة ✨",
+        "الفشل جزء من النجاح 📈",
+        "النجاح اجتهاد لا راحة ✍️",
+        "لا تتوقف حتى تصبح فخوراً بنفسك! 🔥",
+        "كل يوم هو فرصة جديدة للنجاح! 🚀"
+    ];
+
+    let qIndex = 0;
+    const box = document.getElementById('quoteBox');
+
+    setInterval(() => {
+        // حركة الاختفاء
+        box.style.opacity = "0";
+        box.style.transform = "translateY(-10px)";
+
+        setTimeout(() => {
+            // تغيير النص
+            qIndex = (qIndex + 1) % quotes.length;
+            box.innerText = quotes[qIndex];
+
+            // حركة الظهور
+            box.style.opacity = "1";
+            box.style.transform = "translateY(0)";
+        }, 800); 
+    }, 4000);
+</script>
+
+        <p style="color:#666; font-size:14px;">كل الي بدك ياه موجود (اختبارات-ملخصات-ملفات شاملة للمادة)</p>
+
+<div class="section-header" style="background: #4CAF50; color: white;">📤 شاركنا بملفاتك المفيدة</div>
+
+<div style="background: #e8f5e9; padding: 20px; border-radius: 15px; border: 2px dashed #4caf50; margin: 15px 0;">
+    <p style="color: #2e7d32; font-weight: bold; font-size: 15px;">هل لديك ملخص أو امتحان؟ ساعد زملائك برفع الملف هنا وسيتم إضافته للموقع فوراً بعد المراجعة!</p>
+    
+    <a href="https://forms.gle/NZnCF4RpGzrpf1j18" target="_blank" 
+       style="display: inline-block; background: #4caf50; color: white; padding: 12px 25px; border-radius: 25px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.3s;">
+       اضغط هنا لرفع الملف 📁
+    </a>
+</div>
+
+       <div class="section-header" style="background:#C11C84;">📂 قسم الملخصات والملفات (PDF)</div>
+
+        <details>
+            <summary>✍️ اللغة العربية <span>▼</span></summary>
+            <div class="content">
+                <a href="https://drive.google.com/drive/folders/1h_iGLRPYWb_E048C17Kks4j3CBazqFB6" class="item-link">ملفات المادة <span class="badge pdf-bg">هنا للذهاب إلى الموقع🔗</span> </a>
+            </div>
+        </details>
+
+        <details>
+            <summary>📖 Advance English 📖 <span>▼</span></summary>
+            <div class="content">
+                <a href="https://drive.google.com/drive/folders/1GHzLADoOx_Eu3XX1pQi9Zgt8_AICdyYd" class="item-link">Unit 1: Grammar <span class="badge pdf-bg">هنا للذهاب إلى الموقع🔗</span></a>
+            </div>
+        </details>
+
+        <details>
+            <summary>☪️ التربية الإسلامية ☪️ <span>▼</span></summary>
+            <div class="content">
+                <a href="https://drive.google.com/drive/folders/1jt9DfzLRsuRda8BiXxTackb2vGrsG0D2" class="item-link">ملفات المادة<span class="badge pdf-bg">هنا للذهاب إلى الموقع🔗</span></a>
+            </div>
+        </details>
+
+        <details>
+            <summary>🌎 جغرافيا 🌍 <span>▼</span></summary>
+            <div class="content">
+                <a href="https://drive.google.com/drive/folders/1mkwXn4d2UJgeU5Cgp0vScV1JhU-otRsW" class="item-link">ملفات المادة<span class="badge pdf-bg">هنا للذهاب إلى للموقع🔗</span></a>
+            </div>
+        </details>
+<div class="section-header" style="background: #E91E63; color: white;">📝 مركز الامتحانات الإلكترونية</div>
+
+
+<details>
+    <summary>اللغة العربية🖊️<span>▼</span></summary>
+    <div class="content">
+        <a href="https://joquiz.com/%d8%a8%d9%86%d9%83-%d8%a3%d8%b3%d8%a6%d9%84%d8%a9-%d8%a7%d9%84%d8%b9%d8%b1%d8%a8%d9%8a%d8%a9-%d8%a7%d9%84%d8%aa%d8%ae%d8%b5%d8%b5-%d8%a7%d9%84%d8%a3%d8%af%d8%a8-%d8%a7%d9%84%d9%86%d8%ad%d9%88/" class="item-link">امتحانات الفصلين <span class="badge pdf-bg">هنا للذهاب إلى الموقع🔗</span></a>
+    </div>
+</details>
+
+
+<details>
+    <summary>اللغة الإنجليزية متقدم🌐<span>▼</span></summary>
+    <div class="content">
+        <a href="https://joquiz.com/%D8%A8%D9%86%D9%83-%D8%A3%D8%B3%D8%A6%D9%84%D8%A9-%D8%A7%D9%84%D9%84%D8%BA%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A-%D8%B9%D8%B4%D8%B1/" class="item-link">امتحانات الفصلين <span class="badge pdf-bg">هنا للذهاب إلى الموقع🔗</span></a>
+</div>
+<a href="https://teacheranas.com/%D8%A5%D9%85%D8%AA%D8%AD%D8%A7%D9%86%D8%A7%D8%AA-2008" class="item-link">رابط إختبارات الأستاذ أنس البلوي<span class="badge pdf-bg">هنا للذهاب إلى الموقع🔗</span></a>
+</details>
+
+<details>
+    <summary>التربية الاسلامية☪️<span>▼</span></summary>
+    <div class="content">
+        <a href="https://joquiz.com/%d8%a8%d9%86%d9%83-%d8%a3%d8%b3%d8%a6%d9%84%d8%a9-%d8%a7%d9%84%d8%aa%d8%b1%d8%a8%d9%8a%d8%a9-%d8%a7%d9%84%d8%a5%d8%b3%d9%84%d8%a7%d9%85%d9%8a%d8%a9-%d8%a7%d9%84%d8%aa%d8%ae%d8%b5%d8%b5/" class="item-link">امتحانات الفصلين <span class="badge pdf-bg">هنا للذهاب إلى الموقع🔗</span></a>
+    </div>
+</details>
+
+<details>
+    <summary>الجغرافيا🌎<span>▼</span></summary>
+    <div class="content">
+        <a href="https://joquiz.com/%d8%a8%d9%86%d9%83-%d8%a3%d8%b3%d8%a6%d9%84%d8%a9-%d8%a7%d9%84%d8%ac%d8%ba%d8%b1%d8%a7%d9%81%d9%8a%d8%a7-%d8%a7%d9%84%d8%ab%d8%a7%d9%86%d9%8a-%d8%b9%d8%b4%d8%b1/" class="item-link">امتحانات الفصلين<span class="badge pdf-bg">هنا للذهاب إالى الموقع🔗 </span></a>
+    </div>
+</details>
+
+        <div class="section-header" style="background: #4b0082;">الملخصات والبنوك</div>
+
+        <details>
+            <summary>🌎الجغرافيا<span>▼</span></summary>
+            <div class="content">
+                <a href="https://drive.google.com/drive/folders/1FlBjg88XG50NXgmVEcHao8gCEt5ULGGG" class="item-link">الملخص الفصلين<span class="badge pdf-bg">عرض 📥</span></a>
+
+                </div>
+        </details>
+    
+    <details>
+            <summary>☪️التربية الإسلامية<span>▼</span></summary>
+            <div class="content">
+                <a href="https://drive.google.com/drive/folders/1MmPA3teaxvCuBIkmECKC4ehsGSQgc_jr" class="item-link">ملخصات الفصلين<span class="badge pdf-bg">عرض الملخصات 📥</span></a>
+
+                </div>
+        </details>
+    
+    
+    <details>
+            <summary>🖊️اللغة العربية<span>▼</span></summary>
+            <div class="content">
+                <a href="https://drive.google.com/drive/folders/1rEA98w71K6NlpbDZA-tl3fmfwLhkZFYH" class="item-link">ملخصات الفصلين<span class="badge pdf-bg">عرض الملخصات 📥</span></a>
+
+                </div>
+        </details>
+    
+
+<div class="section-header" style="background: #ffc0cb;">🔥 مراجعات ليلة الامتحان</div>
+
+<details>
+    <summary>📝خطط وجداول<span>▼</span></summary>
+    <div class="content">
+        <a href="https://drive.google.com/drive/folders/1xx15FaYLrWAg6C0LP6nYTCcRFnk4JuAV" class="item-link">الخطط والجداول<span class="badge pdf-bg">الخطط🔗</span></a>
+        </div>
+</details>
+<div class="section-header" style="background: #ffc0cb;">🔥 قسم التحفيز</div>
+
+<details>
+    <summary>⭐ فيديوهات تحفيزية (مشاهدة مباشرة) <span>▼</span></summary>
+    <div class="content">
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px;">
+            <iframe 
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                src="https://www.youtube.com/embed/videoseries?list=PLWX5kvqRrf5EbEADvLkRoOjftwSzIV85U" 
+                title="YouTube playlist" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <p style="font-size: 12px; color: #666; margin-top: 10px;">إذا لم يظهر الفيديو، تأكد أن القائمة "علنية" على يوتيوب.</p>
+    </div>
+</details>
+
+        <div class="footer">
+            هذا الموقع إهداء لشخص غالي (جميع الحقوق محفوظة©)
+        </div>
+
+</body>
+</html>
